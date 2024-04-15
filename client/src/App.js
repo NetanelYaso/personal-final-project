@@ -4,24 +4,25 @@ import '../node_modules/font-awesome/css/font-awesome.min.css';
 
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Header from './components/featurs/Header/Header';
-import { Container } from 'react-bootstrap';
+// import { Container } from 'react-bootstrap';
 import Footer from './components/featurs/Footer/Footer';
-import Home from './components/pages/Home/Home';
-import ProductScreen from './screens/ProductScreen/ProductScreen';
-import CartScreen from './screens/CartScreen/CartScreen';
-import LoginScreen from './screens/LoginScreen/LoginScreen';
-import RegisterScreen from './screens/RegisterScreen/RegisterScreen';
-import ProfileScreen from './screens/ProfileScreen/ProfileScreen';
-import ShippingScreen from './screens/ShippingScreen/ShippingScreen';
-import PaymentScreen from './screens/PaymentScreen/PaymentScreen';
-import PlaceOrderScreen from './screens/PlaceOrderScreen/PlaceOrderScreen';
+// import Home from './components/pages/Home/Home';
+// import ProductScreen from './screens/ProductScreen/ProductScreen';
+// import CartScreen from './screens/CartScreen/CartScreen';
+// import LoginScreen from './screens/LoginScreen/LoginScreen';
+// import RegisterScreen from './screens/RegisterScreen/RegisterScreen';
+// import ProfileScreen from './screens/ProfileScreen/ProfileScreen';
+// import ShippingScreen from './screens/ShippingScreen/ShippingScreen';
+// import PaymentScreen from './screens/PaymentScreen/PaymentScreen';
+// import PlaceOrderScreen from './screens/PlaceOrderScreen/PlaceOrderScreen';
+import Router from './Router';
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Header />
-        <main className='py-3'>
+        {/* <main className='py-3'>
           <Container>
             <Routes>
               <Route path='/payment' element={<PaymentScreen />} />
@@ -35,7 +36,8 @@ function App() {
               <Route path='/' element={<Home />} exact />
             </Routes>
           </Container>
-        </main>
+        </main> */}
+        <Router />
         <Footer />
       </BrowserRouter>
     </>

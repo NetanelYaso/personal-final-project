@@ -10,9 +10,9 @@ const usersRouter = require("./routes/users-routes");
 const productsRouter = require("./routes/products-routes");
 const ordersRouter = require("./routes/orders-routes");
 // const authRouter = require("./routes/auth-routes");
-const { notFound, errorHandler } = require("./middlewere/errorMiddlwere")
+const { notFound, errorHandler } = require("./middlewere/errorMiddleware")
 
-app.use(express.json({ extened: true }));
+app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
